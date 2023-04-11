@@ -1,0 +1,23 @@
+data types 
+variables 
+operators
+functoions
+conditional statements
+loops
+
+
+Todays topics: 
+
+functions
+Primitive and non primitve
+    call by reference and call by value
+Hoisting
+
+Browser => which has js engine inside 
+    chrome (V8 engine) c++
+
+Node => only has the js engine (V8)
+
+    
+
+What is needed to execute a js code ?
