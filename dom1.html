@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .enable{
+            background-color: green; 
+        }
+        .disable{
+            background-color: red ;
+        }
+        #container {
+            border: 2px solid blue ;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text" id="test" value="Inside" placeholder="Some placeholder" required name="username" > -->
+
+    <div id="container">
+        <p id="p1">Paragraph 1</p>
+        <span id="span1">Span 1</span>
+        <b id="b1">Bold 1</b>
+        <h1>lkfnldgfn</h1>
+    </div>
+
+    <button onclick="insertElementIntheMiddle()">Insert in the middle</button>
+
+    <button onclick="addElement()">Add element</button>
+
+    <button onclick="deleteChildren()">Delete Children</button>
+
+    <button id="change" onclick="changeTextInsideThePara()">Change the Text of para</button>
+
+    <button id="btn" onclick="printValue()">Disable the input</button>
+    <script src="./dom1.js"></script>
+</body>
+</html>
+
+<!-- 
+    input , enabled 
+
+    on the button `Disable the input`
+
+
+    input , disabled
+
+    on the button `Enable the button`
+
+
+ -->
