@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="1">
+      <div id="2">Element 2</div>
+      <div id="3">Element 3</div>
+    </div>
+
+    <div id="4">
+      <div id="5">Element 5</div>
+    </div>
+
+    <button id="test">Click Me</button>
+    <button id="test2">Second button</button>
+
+
+    <div id="root">
+        Some text1
+        <div>Some more text</div>
+        <button>Some more text2</button>
+    </div>
+
+    <script>
+      // 2 , 3, 5
+      // div > div
+    //   const divs = document.querySelectorAll("div > div");
+    //     // divs = ["div#2" , "div#3", "div#5"]
+    //   function func() {
+    //     console.log("clicked on the targetted element");
+    //   }
+
+    //   for(let i = 0;  i < divs.length; i++){
+    //     // i = 1 , divs[1] = "div#3"
+    //     console.log(divs[i].id); // "2" , "3"
+    //     divs[i].addEventListener("click", () =b);
+    //   }
+
+    const root = document.getElementById("root");
+
+    console.log(root.innerHTML);
+    console.log(root.textContent);
+
+
+      const button = document.getElementById("test");
+
+      const callback = function(event){
+        // i want the reference of the element on which i clicked
+        // console.log("you clicked the button", event.target, event.srcElement);
+        console.log(event.target);
+        // const element = event.target ;
+        // element.innerText = "clicked" ;
+        // element.style.border = "2px solid red" ;
+        event.target.innerText = "Changed InnerText"
+      }
+
+      button.addEventListener("click", callback);
+      // addEventListener(string, function)
+
+      const button2 = document.getElementById("test2");
+      button2.addEventListener("click", callback)
+      /*
+
+      */
+
+      /*
+      function addEventListener(eventType, eventListener){
+        console.log(eventType);
+        eventListener(10, 20, 30, 40); // string, number, boolean, function
+        eventListener(1, 2, 3, 4)
+      }
+
+      addEventListener("aravind", (a, b , c, d) => {
+        console.log("inside the callback", a, b, c, d)
+      });
+      */
+    </script>
+  </body>
+</html>
