@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gameContainer {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            margin: auto 100px;
+            position: relative ;
+        }
+        .snakeBodyPixel {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            background-color: red;
+            position: absolute ;
+            z-index: 2;
+        }
+        .food {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute ;
+            /* row = 24th row
+                column = 2nd column
+            */
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!--    
+        400 * 400 
+        
+        40*40
+
+        each row height = 10px;
+        each column width = 10px;
+
+
+     -->
+    <div id="gameContainer">
+        <div class="snakeBodyPixel" id="pixel2"></div>
+    </div>
+
+    <h1>Your score: <span id="score">0</span></h1>
+
+    <script src="./snake.js"></script>
+</body>
+</html>
