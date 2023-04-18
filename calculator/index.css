@@ -35,12 +35,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2px;
 }
-.grid-container > div {
+.grid-container > button {
    background-color: #0D2835;
    padding: 10px;
    color: white ;
    font-size: 20px;
    text-align: center;
+   border: none ;
 }
 
 .grid-container > .bottom-row {
@@ -52,11 +53,17 @@
     padding: 0;
 }
 
-.grid-container > .bottom-row > div {
+.grid-container > .bottom-row > button {
     background-color: #0D2835;
     padding: 10px;
     text-align: center;
     flex-grow: 1;
+    border: none ;
+    color: white ;
+}
+
+input:disabled {
+    background-color: white;
 }
 
 /* 
